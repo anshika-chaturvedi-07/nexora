@@ -3,7 +3,7 @@ services:
     build: .
     image: nexora:latest
     ports:
-      - "8000:8000"
+      - "8200:8000"  # host port 8200 locally; the container still listens on 8000
     # Optional: put ANTHROPIC_API_KEY=... in a .env file next to this one
     # to let Claude write the report summary. Without it, NEXORA uses its template writer.
     env_file:

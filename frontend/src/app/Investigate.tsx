@@ -479,7 +479,7 @@ export default function Investigate() {
           {failed && (
             <Card className="p-5 text-sm">
               <div className="font-semibold text-rose">Lost connection to the NEXORA engine</div>
-              <p className="mt-1 text-ink-300">Make sure the backend is running on port 8000, then press <b>Run again</b>.</p>
+              <p className="mt-1 text-ink-300">Make sure the backend is running on port 8200, then press <b>Run again</b>.</p>
             </Card>
           )}
           <div ref={bottomRef} />

@@ -95,7 +95,7 @@ using the findings JSON; if no API key is set, or the call fails, the determinis
 docker compose up --build
 ```
 
-Open http://localhost:8000.
+Open http://localhost:8200.
 
 ### Option B: local development (lighter on RAM)
 
@@ -107,7 +107,7 @@ python -m venv .venv
 .venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 python -m nexora.data.generate   # creates the synthetic dataset
-uvicorn nexora.api:app --port 8000
+uvicorn nexora.api:app --port 8200
 ```
 
 Frontend (Node 20+), in a second terminal:
@@ -118,7 +118,7 @@ npm install --legacy-peer-deps
 npm run dev
 ```
 
-Open http://localhost:5173.
+Open http://localhost:5280.
 
 Run the investigation from the command line, or run the tests:
 

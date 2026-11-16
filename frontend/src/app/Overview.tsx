@@ -31,7 +31,7 @@ export function ErrorBox({ error }: { error: string }) {
   return (
     <Card className="p-6 text-sm">
       <div className="font-semibold text-rose">Can’t reach the NEXORA engine</div>
-      <p className="mt-1 text-ink-300">{error}. Start the backend with <code className="font-mono text-cyan">uvicorn nexora.api:app --port 8000</code> and refresh.</p>
+      <p className="mt-1 text-ink-300">{error}. Start the backend with <code className="font-mono text-cyan">uvicorn nexora.api:app --port 8200</code> and refresh.</p>
     </Card>
   );
 }
