@@ -1,0 +1,12 @@
+services:
+  nexora:
+    build: .
+    image: nexora:latest
+    ports:
+      - "8000:8000"
+    # Optional: put ANTHROPIC_API_KEY=... in a .env file next to this one
+    # to let Claude write the report summary. Without it, NEXORA uses its template writer.
+    env_file:
+      - path: .env
+        required: false
+    restart: unless-stopped

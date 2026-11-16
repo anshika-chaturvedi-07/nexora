@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Generated data (recreate with: python -m nexora.data.generate)
+backend/nexora/data/raw/
+backend/nexora/data/documents/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Secrets & local tooling
+.env
+.claude/

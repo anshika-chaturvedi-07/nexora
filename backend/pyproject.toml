@@ -1,0 +1,9 @@
+[project]
+name = "nexora"
+version = "0.1.0"
+description = "NEXORA: an enterprise investigation engine that explains why business metrics moved."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
