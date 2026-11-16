@@ -7,6 +7,9 @@
 An agentic investigation platform that traces a business metric drop to its root causes,
 across sales, inventory, suppliers, infrastructure and internal documents, then simulates what to do next.
 
+**[▶ Live demo](https://nexora-bd7r.onrender.com)** · [Watch an investigation](https://nexora-bd7r.onrender.com/app/investigate)
+<sub>(free hosting: the first visit after a quiet spell takes ~1 minute to wake up)</sub>
+
 ![NEXORA landing page](docs/screenshots/landing.jpg)
 
 </div>
