@@ -1,0 +1,14 @@
+# One-click deploy on Render (free tier): Dashboard → New → Blueprint → pick this repo.
+# A single container serves both the API and the built website.
+services:
+  - type: web
+    name: nexora
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      # Optional: set in the Render dashboard to let Claude write the report summary
+      - key: ANTHROPIC_API_KEY
+        sync: false
